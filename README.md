@@ -1,5 +1,7 @@
 ## Hack GitHub Activity Bar
 
+![](./shot.jpg)
+
 ## Built with
 
 - Python
@@ -20,3 +22,7 @@ python git.py
 ## Demo
 
 ![](./demo.gif)
+
+## Contributor
+
+Erik Williams
