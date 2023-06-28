@@ -4,7 +4,7 @@ import random
 from datetime import datetime, timedelta
 
 commit_messages = []
-for i in range(400):
+for i in range(1000):
     date = datetime.now() - timedelta(days=i)
     formatted_date = date.strftime("%Y-%m-%d")
     rand = random.randrange(1, 12)
