@@ -1,15 +1,21 @@
 #!/usr/bin/env python3
-import os, random
+import random
+import subprocess
+from datetime import datetime, timedelta
+
+with open("test.txt", "a") as file:
+    for i in range(400):
+        d = str(i) + "days ago"
+        rand = random.randrange(1, 12)
+        file.write(d + "\n")
+
+subprocess.run(["git", "add", "test.txt"], check=True)
 
 for i in range(400):
     d = str(i) + "days ago"
     rand = random.randrange(1, 12)
-    with open("test.txt", "a") as file:
-        file.write(d + "\n")
-    os.system("git add test.txt")
-    os.system('git commit --date=" 2023-' + str(rand) + "-" + d + '" -m 1')
-os.system("git push -u origin main")
+    subprocess.run(
+        ["git", "commit", "--date", f"2023-{rand}-{d}", "-m", "1"], check=True
+    )
 
-# git commit --amend --no-edit --date="Fri Nov 6 20:00:00 2015 -0600"
-# git fetch origin master
-# git rebase origin/master
+subprocess.run(["git", "push", "-u", "origin", "main"], check=True)
