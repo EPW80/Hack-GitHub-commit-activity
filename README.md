@@ -2,12 +2,6 @@
 
 The Hack GitHub Commit Activity project, is a Python-based tool designed to help users manipulate their GitHub commit activity. It provides a unique way to customize the visual appearance of your contributions graph. Please be aware that this tool is intended for experimental and learning purposes only. Misuse of this tool for unethical purposes is not condoned.
 
-## Features
-
-- Customize Activity Bar: Design your activity bar to your liking or to display specific patterns or messages.
-
-- Easy Installation: No complex setup required; all you need is Python.
-
 ## Requirements
 
 - Python 3.x installed on your system.
