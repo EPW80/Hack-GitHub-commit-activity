@@ -47,9 +47,9 @@ cd hack-github-activity
 python git.py
 ```
 
-## Image of GitHub activity bar post run
+## Image of GitHub commit activity post run
 
-![](./images/shot.jpg)
+![](./images/commit.jpg)
 
 ## Demo
 
