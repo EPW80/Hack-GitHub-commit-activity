@@ -1,14 +1,23 @@
-import os, random
+#!/usr/bin/env python3
+from datetime import datetime, timedelta
+from pathlib import Path
+import random
+import subprocess
 
-for i in range(1000):
-    d = str(i) + "days ago"
-    rand = random.randrange(1, 12)
-    with open("test.txt", "a") as file:
-        file.write(d + "\n")
-    os.system("git add test.txt")
-    os.system('git commit --date=" 2023-' + str(rand) + "-" + d + '" -m 1')
-os.system("git push -u origin main")
 
-# git commit --amend --no-edit --date="Fri Nov 6 20:00:00 2015 -0600"
-# git fetch origin master
-# git rebase origin/master
+def git_command(args):
+    try:
+        subprocess.run(args, check=True)
+    except subprocess.CalledProcessError:
+        pass
+
+
+commit_messages = [f"{(datetime.now() - timedelta(days=i)).strftime('%Y-%m-%d')} rand value: {random.randrange(1, 12)}"
+                   for i in range(500)]
+
+Path("test.txt").write_text("\n".join(commit_messages))
+
+git_command(["git", "add", "test.txt"])
+
+for message in commit_messages:
+    git_command(["git", "commit", "--date", message.split()[0], "-m", "1"])
