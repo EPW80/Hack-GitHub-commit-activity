@@ -1,6 +1,6 @@
-# Hack GitHub Activity Bar
+# Hack GitHub-Commit-Activity
 
-The Hack GitHub Activity Bar project, is a Python-based tool designed to help users manipulate their GitHub activity bar. It provides a unique way to customize the visual appearance of your contributions graph. Please be aware that this tool is intended for experimental and learning purposes only. Misuse of this tool for unethical purposes is not condoned.
+The Hack GitHub Commit Activity project, is a Python-based tool designed to help users manipulate their GitHub commit activity. It provides a unique way to customize the visual appearance of your contributions graph. Please be aware that this tool is intended for experimental and learning purposes only. Misuse of this tool for unethical purposes is not condoned.
 
 ## Features
 
