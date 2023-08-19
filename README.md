@@ -1,6 +1,6 @@
 # Hack GitHub-Commit-Activity
 
-The Hack GitHub Commit Activity project, is a Python-based tool designed to help users manipulate their GitHub commit activity. It provides a unique way to customize the visual appearance of your contributions graph. Please be aware that this tool is intended for experimental and learning purposes only. Misuse of this tool for unethical purposes is not condoned.
+The Hack GitHub Commit Activity project is a Python-based tool to help users manipulate their GitHub commit activity. It provides a unique way to customize the visual appearance of your contributions graph. Just to let you know, this tool is intended for experimental and learning purposes only. Misuse of this tool for unethical purposes is not condoned.
 
 ## Requirements
 
@@ -26,7 +26,7 @@ pip --version
 Clone the repository to your local machine:
 
 ```
-git clone https://github.com/<yourusername>/hack-github-activity.git
+git clone https://github.com/EPW80/hack-github-activity.git
 ```
 
 Navigate to the cloned directory:
@@ -55,4 +55,4 @@ Erik Williams
 
 ### Disclaimer
 
-Please note that this tool is for educational and recreational purposes only. Any unethical use of this tool will not be the responsibility of the creator. Always respect GitHub's terms of service and use this tool responsibly.
+Just so you know, this tool is for educational and recreational purposes only. Any unethical use of this tool will not be the responsibility of the creator. Always respect GitHub's terms of service and use this tool responsibly.
